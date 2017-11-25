@@ -38,37 +38,15 @@ use yii\base\Event;
  */
 class PositionFieldtype extends Plugin
 {
-    // Static Properties
-    // =========================================================================
-
-    /**
-     * Static property that is an instance of this plugin class so that it can be accessed via
-     * PositionFieldtype::$plugin
-     *
-     * @var PositionFieldtype
-     */
-    public static $plugin;
-
     // Public Methods
     // =========================================================================
 
-    /**
-     * Set our $plugin static property to this class so that it can be accessed via
-     * PositionFieldtype::$plugin
-     *
-     * Called after the plugin class is instantiated; do any one-time initialization
-     * here such as hooks and events.
-     *
-     * If you have a '/vendor/autoload.php' file, it will be loaded for you automatically;
-     * you do not need to load it in your init() method.
-     *
-     */
+    /* @inheritdoc */
     public function init()
     {
         parent::init();
-        self::$plugin = $this;
 
-        // Register our fields
+        // Register our field
         Event::on(
             Fields::class,
             Fields::EVENT_REGISTER_FIELD_TYPES,
@@ -77,8 +55,4 @@ class PositionFieldtype extends Plugin
             }
         );
     }
-
-    // Protected Methods
-    // =========================================================================
-
 }

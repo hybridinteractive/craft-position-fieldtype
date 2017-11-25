@@ -9,7 +9,7 @@
  */
 
 /**
- * Position Fieldtype en Translation
+ * Position Fieldtype nl Translation
  *
  * Returns an array with the string to be translated (as passed to `Craft::t('position-fieldtype', '...')`) as
  * the key, and the translation as the value.
@@ -21,13 +21,13 @@
  * @since     1.0.0
  */
 return [
-    'Left' => 'Left',
-    'Right' => 'Right',
-    'Options' => 'Options',
-    'Center' => 'Center',
-    'Position' => 'Position',
-    'Drop-right' => 'Drop-right',
-    'Drop-left' => 'Drop-left',
-    'Choose which position options should be available to your field.' => 'Choose which position options should be available to your field.',
-    'Full' => 'Full'
+    'Left' => 'Links',
+    'Right' => 'Rechts',
+    'Options' => 'Opties',
+    'Center' => 'Centraal',
+    'Position' => 'Positie',
+    'Drop-right' => 'Beneden-rechts',
+    'Drop-left' => 'Beneden-links',
+    'Choose which position options should be available to your field.' => 'Kies welke positie opties er beschikbaar moeten zijn voor dit veld.',
+    'Full' => 'Volledig'
 ];
