@@ -2,8 +2,6 @@
 
 Brings back the Position fieldtype from Craft 2
 
-![Screenshot](resources/img/plugin-logo.png)
-
 ![Screenshot](resources/img/plugin-screenshot.png)
 
 ## Requirements
