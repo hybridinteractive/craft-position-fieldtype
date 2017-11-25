@@ -1,0 +1,25 @@
+{#
+/**
+ * Position Fieldtype plugin for Craft CMS 3.x
+ *
+ * Position Field Input
+ *
+ * @author    Rias
+ * @copyright Copyright (c) 2017 Rias
+ * @link      https://rias.be
+ * @package   PositionFieldtype
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+<div id="{{ id }}" class="btngroup big">
+    {% for option, label in allOptions %}
+        {% if field.options[option] %}
+            <div title="{{ label }}" class="btn big {% if option == value %} active{% endif %} position-icon-{{ option }}" data-option="{{ option }}"></div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<input type="hidden" name="{{ name }}" value="{{ value }}">
