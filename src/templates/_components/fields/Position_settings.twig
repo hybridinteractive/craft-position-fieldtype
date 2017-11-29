@@ -24,7 +24,7 @@
             <tr>
                 <td>
                     {{ forms.lightswitch({
-                        on: settings.options[option],
+                        on: settings.options[option]|default(false),
                         small: true,
                         name: 'options['~option~']'
                     }) }}
