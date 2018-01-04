@@ -29,5 +29,7 @@ return [
     'Drop-right' => 'Drop-right',
     'Drop-left' => 'Drop-left',
     'Choose which position options should be available to your field.' => 'Choose which position options should be available to your field.',
-    'Full' => 'Full'
+    'Full' => 'Full',
+    'Default' => 'Default',
+    'Choose a default position' => 'Choose a default position',
 ];
