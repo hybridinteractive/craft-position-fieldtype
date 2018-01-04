@@ -32,6 +32,9 @@ use craft\helpers\Json;
  * @author    Rias
  * @package   PositionFieldtype
  * @since     1.0.0
+ *
+ * @property string      $contentColumnType
+ * @property null|string $settingsHtml
  */
 class Position extends Field
 {
@@ -39,11 +42,18 @@ class Position extends Field
     // =========================================================================
 
     /**
-     * Some attribute
+     * Available options
      *
      * @var string
      */
     public $options = [];
+
+    /**
+     * Default value
+     *
+     * @var string
+     */
+    public $default = '';
 
     // Static Methods
     // =========================================================================
@@ -76,6 +86,7 @@ class Position extends Field
         $rules = parent::rules();
         $rules = array_merge($rules, [
             ['options', 'each', 'rule' => ['string']],
+            ['default', 'string'],
         ]);
         return $rules;
     }
@@ -118,15 +129,28 @@ class Position extends Field
      * Returns the component’s settings HTML.
      *
      * @return string|null
+     * @throws \Twig_Error_Loader
+     * @throws \yii\base\Exception
      */
     public function getSettingsHtml()
     {
+        // Register our asset bundle
+        Craft::$app->getView()->registerAssetBundle(PositionFieldTypeAsset::class);
+
+        // Get our id and namespace
+        $id = Craft::$app->getView()->formatInputId($this);
+        $namespacedId = Craft::$app->getView()->namespaceInputId($id);
+
+        Craft::$app->getView()->registerJs("new PositionSelectInput('{$namespacedId}');");
+
         // Render the settings template
         return Craft::$app->getView()->renderTemplate(
             'position-fieldtype/_components/fields/Position_settings',
             [
                 'field' => $this,
                 'allOptions' => array_keys(static::getOptions()),
+                'id' => $id,
+                'namespacedId' => $namespacedId,
                 'settings'   => $this->settings,
             ]
         );
@@ -135,12 +159,15 @@ class Position extends Field
     /**
      * Returns the field’s input HTML.
      *
-     * @param mixed $value                           The field’s value.
+     * @param mixed                 $value           The field’s value.
      *                                               This will either be the [[normalizeValue() normalized value]],
      *                                               raw POST data (i.e. if there was a validation error), or null
      * @param ElementInterface|null $element         The element the field is associated with, if there is one
      *
      * @return string The input HTML.
+     * @throws \Twig_Error_Loader
+     * @throws \yii\base\Exception
+     * @throws \yii\base\InvalidConfigException
      */
     public function getInputHtml($value, ElementInterface $element = null): string
     {
