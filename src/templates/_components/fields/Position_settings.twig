@@ -14,8 +14,6 @@
 
 {% import "_includes/forms" as forms %}
 
-{% import "_includes/forms" as forms %}
-
 {% do view.registerAssetBundle("rias\\positionfieldtype\\assetbundles\\positionfieldtype\\PositionFieldtypeAsset") %}
 
 {% set input %}
@@ -45,3 +43,18 @@
     instructions: "Choose which position options should be available to your field."|t('position-fieldtype'),
 }, input) }}
 
+<div class="field">
+    <div class="heading">
+        <label>{{ "Default" | t('position-fieldtype') }}</label>
+        <div class="instructions"><p>{{ "Choose a default position" | t('position-fieldtype') }}</p>
+        </div>
+    </div>
+
+    <div id="{{ id }}" class="btngroup big">
+        {% for option, label in allOptions %}
+            <div title="{{ label }}" class="btn big {% if settings.default is not empty and settings.default == label %} active{% endif %} position-icon-{{ label }}" data-option="{{ label }}"></div>
+        {% endfor %}
+    </div>
+
+    <input type="hidden" name="default" value="{{ settings.default }}">
+</div>

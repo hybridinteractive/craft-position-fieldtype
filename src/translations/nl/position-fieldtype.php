@@ -29,5 +29,7 @@ return [
     'Drop-right' => 'Beneden-rechts',
     'Drop-left' => 'Beneden-links',
     'Choose which position options should be available to your field.' => 'Kies welke positie opties er beschikbaar moeten zijn voor dit veld.',
-    'Full' => 'Volledig'
+    'Full' => 'Volledig',
+    'Default' => 'Standaardwaarde',
+    'Choose a default position' => 'Kies een standaard positie',
 ];
