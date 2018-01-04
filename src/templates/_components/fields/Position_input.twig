@@ -17,7 +17,7 @@
 <div id="{{ id }}" class="btngroup big">
     {% for option, label in allOptions %}
         {% if field.options[option] %}
-            <div title="{{ label }}" class="btn big {% if option == value %} active{% endif %} position-icon-{{ option }}" data-option="{{ option }}"></div>
+            <div title="{{ label }}" class="btn big {% if value is not null ? option == value : field.default == option %} active{% endif %} position-icon-{{ option }}" data-option="{{ option }}"></div>
         {% endif %}
     {% endfor %}
 </div>

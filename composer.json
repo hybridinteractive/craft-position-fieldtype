@@ -2,7 +2,7 @@
     "name": "rias/craft3-position-fieldtype",
     "description": "Brings back the Position fieldtype from Craft 2",
     "type": "craft-plugin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": [
         "craft",
         "cms",
@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "~3.0.0-beta.23"
+        "craftcms/cms": "^3.0.0-beta.23"
     },
     "repositories": [
         {
