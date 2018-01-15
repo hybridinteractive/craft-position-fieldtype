@@ -1,3 +1,10 @@
+![Icon](./src/icon.svg)
+
+[![Latest Version](https://img.shields.io/github/release/rias500/craft-position-fieldtype.svg?style=flat-square)](https://github.com/rias500/craft-position-fieldtype/releases)
+[![Quality Score](https://img.shields.io/scrutinizer/g/rias500/craft-position-fieldtype.svg?style=flat-square)](https://scrutinizer-ci.com/g/rias500/craft-position-fieldtype)
+[![StyleCI](https://styleci.io/repos/112007386/shield)](https://styleci.io/repos/112007386)
+[![Total Downloads](https://img.shields.io/packagist/dt/rias/craft-position-fieldtype.svg?style=flat-square)](https://packagist.org/packages/rias/craft-position-fieldtype)
+
 # Position Fieldtype plugin for Craft CMS 3.x
 
 Brings back the Position fieldtype from Craft 2
