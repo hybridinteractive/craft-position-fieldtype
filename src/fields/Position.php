@@ -148,7 +148,7 @@ class Position extends Field
             'position-fieldtype/_components/fields/Position_settings',
             [
                 'field'        => $this,
-                'allOptions'   => array_keys(static::getOptions()),
+                'allOptions'   => array_keys(self::getOptions()),
                 'id'           => $id,
                 'namespacedId' => $namespacedId,
                 'settings'     => $this->settings,
