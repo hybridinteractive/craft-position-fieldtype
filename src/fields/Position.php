@@ -135,7 +135,7 @@ class Position extends Field
     public function getSettingsHtml()
     {
         // Register our asset bundle
-        Craft::$app->getView()->registerAssetBundle(PositionFieldTypeAsset::class);
+        Craft::$app->getView()->registerAssetBundle(PositionFieldtypeAsset::class);
 
         // Get our id and namespace
         $id = Craft::$app->getView()->formatInputId($this);
@@ -173,7 +173,7 @@ class Position extends Field
     public function getInputHtml($value, ElementInterface $element = null): string
     {
         // Register our asset bundle
-        Craft::$app->getView()->registerAssetBundle(PositionFieldTypeAsset::class);
+        Craft::$app->getView()->registerAssetBundle(PositionFieldtypeAsset::class);
 
         // Get our id and namespace
         $id = Craft::$app->getView()->formatInputId($this->handle);
