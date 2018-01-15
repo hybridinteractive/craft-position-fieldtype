@@ -1,13 +1,15 @@
 <?php
 
 /**
- * Position Fieldtype plugin for Craft CMS 3.x
+ * Position Fieldtype plugin for Craft CMS 3.x.
  *
  * Brings back the Position fieldtype from Craft 2
  *
  * @link      https://rias.be
+ *
  * @copyright Copyright (c) 2017 Rias
  */
+
 namespace rias\positionfieldtype\assetbundles\PositionFieldtype;
 
 use Craft;
@@ -15,7 +17,7 @@ use craft\web\AssetBundle;
 use craft\web\assets\cp\CpAsset;
 
 /**
- * PositionFieldtypeAsset AssetBundle
+ * PositionFieldtypeAsset AssetBundle.
  *
  * AssetBundle represents a collection of asset files, such as CSS, JS, images.
  *
@@ -29,20 +31,21 @@ use craft\web\assets\cp\CpAsset;
  * http://www.yiiframework.com/doc-2.0/guide-structure-assets.html
  *
  * @author    rias
- * @package   PositionFieldtype
+ *
  * @since     1.0.0
  */
 class PositionFieldtypeAsset extends AssetBundle
 {
     // Public Methods
     // =========================================================================
+
     /**
      * Initializes the bundle.
      */
     public function init()
     {
         // define the path that your publishable resources live
-        $this->sourcePath = "@rias/positionfieldtype/assetbundles/positionfieldtype/dist";
+        $this->sourcePath = '@rias/positionfieldtype/assetbundles/positionfieldtype/dist';
         // define the dependencies
         $this->depends = [
             CpAsset::class,

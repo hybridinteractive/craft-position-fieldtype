@@ -1,24 +1,22 @@
 <?php
 /**
- * Position Fieldtype plugin for Craft CMS 3.x
+ * Position Fieldtype plugin for Craft CMS 3.x.
  *
  * Brings back the Position fieldtype from Craft 2
  *
  * @link      https://rias.be
+ *
  * @copyright Copyright (c) 2017 Rias
  */
 
 namespace rias\positionfieldtype;
 
-use rias\positionfieldtype\fields\Position as PositionField;
-
 use Craft;
 use craft\base\Plugin;
-use craft\services\Plugins;
-use craft\events\PluginEvent;
-use craft\services\Fields;
 use craft\events\RegisterComponentTypesEvent;
-
+use craft\services\Fields;
+use craft\services\Plugins;
+use rias\positionfieldtype\fields\Position as PositionField;
 use yii\base\Event;
 
 /**
@@ -32,9 +30,8 @@ use yii\base\Event;
  * https://craftcms.com/docs/plugins/introduction
  *
  * @author    Rias
- * @package   PositionFieldtype
- * @since     1.0.0
  *
+ * @since     1.0.0
  */
 class PositionFieldtype extends Plugin
 {

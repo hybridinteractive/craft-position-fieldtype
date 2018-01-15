@@ -1,27 +1,24 @@
 <?php
 /**
- * Position Fieldtype plugin for Craft CMS 3.x
+ * Position Fieldtype plugin for Craft CMS 3.x.
  *
  * Brings back the Position fieldtype from Craft 2
  *
  * @link      https://rias.be
+ *
  * @copyright Copyright (c) 2017 Rias
  */
 
 namespace rias\positionfieldtype\fields;
 
-use rias\positionfieldtype\assetbundles\PositionFieldtype\PositionFieldtypeAsset;
-use rias\positionfieldtype\PositionFieldtype;
-
 use Craft;
 use craft\base\ElementInterface;
 use craft\base\Field;
-use craft\helpers\Db;
+use rias\positionfieldtype\assetbundles\PositionFieldtype\PositionFieldtypeAsset;
 use yii\db\Schema;
-use craft\helpers\Json;
 
 /**
- * Position Field
+ * Position Field.
  *
  * Whenever someone creates a new field in Craft, they must specify what
  * type of field it is. The system comes with a handful of field types baked in,
@@ -30,7 +27,7 @@ use craft\helpers\Json;
  * https://craftcms.com/docs/plugins/field-types
  *
  * @author    Rias
- * @package   PositionFieldtype
+ *
  * @since     1.0.0
  *
  * @property string      $contentColumnType
@@ -42,14 +39,14 @@ class Position extends Field
     // =========================================================================
 
     /**
-     * Available options
+     * Available options.
      *
      * @var string
      */
     public $options = [];
 
     /**
-     * Default value
+     * Default value.
      *
      * @var string
      */
@@ -88,6 +85,7 @@ class Position extends Field
             ['options', 'each', 'rule' => ['string']],
             ['default', 'string'],
         ]);
+
         return $rules;
     }
 
@@ -97,9 +95,10 @@ class Position extends Field
      * This method will only be called if [[hasContentColumn()]] returns true.
      *
      * @return string The column type. [[\yii\db\QueryBuilder::getColumnType()]] will be called
-     * to convert the give column type to the physical one. For example, `string` will be converted
-     * as `varchar(255)` and `string(100)` becomes `varchar(100)`. `not null` will automatically be
-     * appended as well.
+     *                to convert the give column type to the physical one. For example, `string` will be converted
+     *                as `varchar(255)` and `string(100)` becomes `varchar(100)`. `not null` will automatically be
+     *                appended as well.
+     *
      * @see \yii\db\QueryBuilder::getColumnType()
      */
     public function getContentColumnType(): string
@@ -128,9 +127,10 @@ class Position extends Field
     /**
      * Returns the component’s settings HTML.
      *
-     * @return string|null
      * @throws \Twig_Error_Loader
      * @throws \yii\base\Exception
+     *
+     * @return string|null
      */
     public function getSettingsHtml()
     {
@@ -147,11 +147,11 @@ class Position extends Field
         return Craft::$app->getView()->renderTemplate(
             'position-fieldtype/_components/fields/Position_settings',
             [
-                'field' => $this,
-                'allOptions' => array_keys(static::getOptions()),
-                'id' => $id,
+                'field'        => $this,
+                'allOptions'   => array_keys(static::getOptions()),
+                'id'           => $id,
                 'namespacedId' => $namespacedId,
-                'settings'   => $this->settings,
+                'settings'     => $this->settings,
             ]
         );
     }
@@ -159,15 +159,16 @@ class Position extends Field
     /**
      * Returns the field’s input HTML.
      *
-     * @param mixed                 $value           The field’s value.
-     *                                               This will either be the [[normalizeValue() normalized value]],
-     *                                               raw POST data (i.e. if there was a validation error), or null
-     * @param ElementInterface|null $element         The element the field is associated with, if there is one
+     * @param mixed                 $value   The field’s value.
+     *                                       This will either be the [[normalizeValue() normalized value]],
+     *                                       raw POST data (i.e. if there was a validation error), or null
+     * @param ElementInterface|null $element The element the field is associated with, if there is one
      *
-     * @return string The input HTML.
      * @throws \Twig_Error_Loader
      * @throws \yii\base\Exception
      * @throws \yii\base\InvalidConfigException
+     *
+     * @return string The input HTML.
      */
     public function getInputHtml($value, ElementInterface $element = null): string
     {
@@ -184,12 +185,12 @@ class Position extends Field
         return Craft::$app->getView()->renderTemplate(
             'position-fieldtype/_components/fields/Position_input',
             [
-                'name' => $this->handle,
-                'value' => $value,
-                'field' => $this,
-                'id' => $id,
+                'name'         => $this->handle,
+                'value'        => $value,
+                'field'        => $this,
+                'id'           => $id,
                 'namespacedId' => $namespacedId,
-                'allOptions' => self::getOptions()
+                'allOptions'   => self::getOptions(),
             ]
         );
     }
