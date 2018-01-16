@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.7 - 2018-01-16
+### Fixed
+- Fixes the validation rules to match what's expected from the template
+
 ## 1.0.6 - 2017-11-25
 ### Fixed
 - Fixed some bugs found by Scrutinizer
