@@ -82,11 +82,39 @@ class Position extends Field
     {
         $rules = parent::rules();
         $rules = array_merge($rules, [
-            ['options', 'each', 'rule' => ['string']],
+            ['options', 'validateOptions'],
             ['default', 'string'],
         ]);
 
         return $rules;
+    }
+
+    /**
+     * Since the options field takes an array with the position as the key name
+     * and 0/1 as the value, we cannot use the normal "each" validator, but must
+     * validate it ourselves.
+     *
+     * @param string $attribute attribute to validate
+     */
+    public function validateOptions($attribute)
+    {
+        $options = $this->$attribute;
+        if (!is_array($options)) {
+            $this->addError($attribute, Craft::t('position-fieldtype', '$options must be an array.'));
+        }
+
+        $allOptions = self::getOptions();
+        foreach ($options as $key => $value) {
+            if (!array_key_exists($key, $allOptions)) {
+                $this->addError($attribute, Craft::t('position-fieldtype', 'Invalid key in $options'));
+            }
+
+            if ($value != 0 && $value != 1) {
+                $this->addError($attribute, Craft::t('position-fieldtype', 'Invalid value for $options[{key}].', [
+                    '{key}' => $key,
+                ]));
+            }
+        }
     }
 
     /**
