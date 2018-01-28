@@ -166,7 +166,7 @@ class Position extends Field
         Craft::$app->getView()->registerAssetBundle(PositionFieldtypeAsset::class);
 
         // Get our id and namespace
-        $id = Craft::$app->getView()->formatInputId("position-fieldtype");
+        $id = Craft::$app->getView()->formatInputId('position-fieldtype');
         $namespacedId = Craft::$app->getView()->namespaceInputId($id);
 
         Craft::$app->getView()->registerJs("new PositionSelectInput('{$namespacedId}');");
