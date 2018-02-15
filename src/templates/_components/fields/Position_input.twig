@@ -22,4 +22,4 @@
     {% endfor %}
 </div>
 
-<input type="hidden" name="{{ name }}" value="{{ value ?? field.default }}">
+<input type="hidden" name="{{ name }}" value="{{ value|default(field.default) }}">
