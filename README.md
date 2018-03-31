@@ -11,6 +11,12 @@ Brings back the Position fieldtype from Craft 2
 
 ![Screenshot](resources/img/plugin-screenshot.png)
 
+## Support Open Source. Buy beer.
+
+This plugin is licensed under a MIT license, which means that it's completely free open source software, and you can use it for whatever and however you wish. If you're using it and want to support the development, buy me a beer over at Beerpay!
+
+[![Beerpay](https://beerpay.io/Rias500/craft-position-fieldtype/badge.svg?style=beer-square)](https://beerpay.io/Rias500/craft-position-fieldtype)
+
 ## Requirements
 
 This plugin requires Craft CMS 3.0.0-beta.23 or later.
@@ -30,8 +36,3 @@ To install the plugin, follow these instructions.
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Position Fieldtype.
 
 Brought to you by [Rias](https://rias.be)
-
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/Rias500/craft-position-fieldtype/badge.svg?style=beer-square)](https://beerpay.io/Rias500/craft-position-fieldtype)  [![Beerpay](https://beerpay.io/Rias500/craft-position-fieldtype/make-wish.svg?style=flat-square)](https://beerpay.io/Rias500/craft-position-fieldtype?focus=wish)
