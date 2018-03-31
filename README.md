@@ -30,3 +30,8 @@ To install the plugin, follow these instructions.
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Position Fieldtype.
 
 Brought to you by [Rias](https://rias.be)
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/Rias500/craft-position-fieldtype/badge.svg?style=beer-square)](https://beerpay.io/Rias500/craft-position-fieldtype)  [![Beerpay](https://beerpay.io/Rias500/craft-position-fieldtype/make-wish.svg?style=flat-square)](https://beerpay.io/Rias500/craft-position-fieldtype?focus=wish)
