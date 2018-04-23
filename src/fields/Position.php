@@ -14,7 +14,7 @@ namespace rias\positionfieldtype\fields;
 use Craft;
 use craft\base\ElementInterface;
 use craft\base\Field;
-use rias\positionfieldtype\assetbundles\PositionFieldtype\PositionFieldtypeAsset;
+use rias\positionfieldtype\assetbundles\positionfieldtype\PositionFieldtypeAsset;
 use yii\db\Schema;
 
 /**
