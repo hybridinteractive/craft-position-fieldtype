@@ -14,7 +14,7 @@
 
 {% import "_includes/forms" as forms %}
 
-<div id="{{ id }}" class="btngroup big">
+<div id="{{ id }}" class="position-fieldtype btngroup big">
     {% for option, label in allOptions %}
         {% if field.options[option] %}
             <div title="{{ label }}" class="btn big {% if value is not null ? option == value : field.default == option %} active{% endif %} position-icon-{{ option }}" data-option="{{ option }}"></div>

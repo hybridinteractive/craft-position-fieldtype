@@ -50,7 +50,7 @@
         </div>
     </div>
 
-    <div id="{{ id }}" class="btngroup big">
+    <div id="{{ id }}" class="position-fieldtype btngroup big">
         {% for option, label in allOptions %}
             <div title="{{ label }}" class="btn big {% if settings.default is not empty and settings.default == label %} active{% endif %} position-icon-{{ label }}" data-option="{{ label }}"></div>
         {% endfor %}
