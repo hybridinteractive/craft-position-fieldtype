@@ -2,7 +2,7 @@
     "name": "rias/craft-position-fieldtype",
     "description": "Brings back the Position fieldtype from Craft 2",
     "type": "craft-plugin",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "keywords": [
         "craft",
         "cms",
@@ -11,8 +11,8 @@
         "position fieldtype"
     ],
     "support": {
-        "docs": "https://github.com/Rias500/position-fieldtype/blob/master/README.md",
-        "issues": "https://github.com/Rias500/position-fieldtype/issues"
+        "docs": "https://github.com/Rias500/craft-position-fieldtype/blob/master/README.md",
+        "issues": "https://github.com/Rias500/craft-position-fieldtype/issues"
     },
     "license": "MIT",
     "authors": [
@@ -41,7 +41,7 @@
         "schemaVersion": "1.0.0",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/Rias500/position-fieldtype/master/CHANGELOG.md",
+        "changelogUrl": "https://raw.githubusercontent.com/Rias500/craft-position-fieldtype/master/CHANGELOG.md",
         "class": "rias\\positionfieldtype\\PositionFieldtype"
     }
 }
