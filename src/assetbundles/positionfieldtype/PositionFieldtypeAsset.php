@@ -12,7 +12,6 @@
 
 namespace rias\positionfieldtype\assetbundles\positionfieldtype;
 
-use Craft;
 use craft\web\AssetBundle;
 use craft\web\assets\cp\CpAsset;
 
