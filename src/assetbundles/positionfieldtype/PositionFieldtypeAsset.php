@@ -10,7 +10,7 @@
  * @copyright Copyright (c) 2017 Rias
  */
 
-namespace rias\positionfieldtype\assetbundles\PositionFieldtype;
+namespace rias\positionfieldtype\assetbundles\positionfieldtype;
 
 use Craft;
 use craft\web\AssetBundle;
