@@ -3,7 +3,7 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(-159.000000, -30.000000)">
             <g id="craft-position-fieldtype" transform="translate(159.000000, 30.000000)">
-                <circle id="background" fill="#4DC0B5" cx="47" cy="47" r="47"></circle>
+                <circle id="background" fill="#BADA55" cx="47" cy="47" r="47"></circle>
                 <path d="M28.6651584,28.6355556 L66.3348416,28.6355556 L66.3348416,38.6808044 L28.6651584,38.6808044 L28.6651584,28.6355556 Z M28.6651584,43.0337456 L37.8733032,43.0337456 L37.8733032,65.6355556 L28.6651584,65.6355556 L28.6651584,43.0337456 Z M44.5701357,43.0337456 L66.3348416,43.0337456 L66.3348416,65.6355556 L44.5701357,65.6355556 L44.5701357,43.0337456 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
             </g>
         </g>

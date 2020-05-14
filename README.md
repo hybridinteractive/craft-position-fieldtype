@@ -1,7 +1,7 @@
 ![Icon](./src/icon.svg)
 
-[![Latest Version](https://img.shields.io/github/release/riasvdv/craft-position-fieldtype.svg?style=flat-square)](https://github.com/riasvdv/craft-position-fieldtype/releases)
-[![Quality Score](https://img.shields.io/scrutinizer/g/riasvdv/craft-position-fieldtype.svg?style=flat-square)](https://scrutinizer-ci.com/g/riasvdv/craft-position-fieldtype)
+[![Latest Version](https://img.shields.io/github/release/hybridinteractive/craft-position-fieldtype.svg?style=flat-square)](https://github.com/hybridinteractive/craft-position-fieldtype/releases)
+[![Quality Score](https://img.shields.io/scrutinizer/g/hybridinteractive/craft-position-fieldtype.svg?style=flat-square)](https://scrutinizer-ci.com/g/hybridinteractive/craft-position-fieldtype)
 [![StyleCI](https://styleci.io/repos/112007386/shield)](https://styleci.io/repos/112007386)
 [![Total Downloads](https://img.shields.io/packagist/dt/rias/craft-position-fieldtype.svg?style=flat-square)](https://packagist.org/packages/rias/craft-position-fieldtype)
 
@@ -15,7 +15,7 @@ Brings back the Position fieldtype from Craft 2
 
 This plugin is licensed under a MIT license, which means that it's completely free open source software, and you can use it for whatever and however you wish. If you're using it and want to support the development, buy me a beer over at Beerpay!
 
-[![Beerpay](https://beerpay.io/riasvdv/craft-position-fieldtype/badge.svg?style=beer-square)](https://beerpay.io/riasvdv/craft-position-fieldtype)
+[![Beerpay](https://beerpay.io/hybridinteractive/craft-position-fieldtype/badge.svg?style=beer-square)](https://beerpay.io/hybridinteractive/craft-position-fieldtype)
 
 ## Requirements
 
@@ -31,8 +31,9 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require rias/craft-position-fieldtype
+        composer require hybridinteractive/craft-position-fieldtype
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Position Fieldtype.
 
-Brought to you by [Rias](https://rias.be)
+Brought to you by [Hybrid Interactive](https://hybridinteractive.io/)
+
