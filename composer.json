@@ -1,5 +1,5 @@
 {
-    "name": "rias/craft-position-fieldtype",
+    "name": "hybridinteractive/craft-position-fieldtype",
     "description": "Brings back the Position fieldtype from Craft 2",
     "type": "craft-plugin",
     "version": "1.0.16",
@@ -11,18 +11,18 @@
         "position fieldtype"
     ],
     "support": {
-        "docs": "https://github.com/riasvdv/craft-position-fieldtype/blob/master/README.md",
-        "issues": "https://github.com/riasvdv/craft-position-fieldtype/issues"
+        "docs": "https://github.com/hybridinteractive/craft-position-fieldtype/blob/master/README.md",
+        "issues": "https://github.com/hybridinteractive/craft-position-fieldtype/issues"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Rias",
-            "homepage": "https://rias.be"
+            "name": "Hybrid Interactive",
+            "homepage": "https://hybridinteractive.io"
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0-RC1"
+        "craftcms/cms": "^3.0.0"
     },
     "repositories": [
         {
