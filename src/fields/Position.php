@@ -109,7 +109,7 @@ class Position extends Field
                 $this->addError($attribute, Craft::t('position-fieldtype', 'Invalid key in $options'));
             }
 
-            if ($value != 0 && $value != 1) {
+            if ($value != 0 && $value != 1 && $value != '') {
                 $this->addError($attribute, Craft::t('position-fieldtype', 'Invalid value for $options[{key}].', [
                     '{key}' => $key,
                 ]));
