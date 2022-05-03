@@ -5,9 +5,9 @@
 [![StyleCI](https://styleci.io/repos/112007386/shield)](https://styleci.io/repos/112007386)
 [![Total Downloads](https://img.shields.io/packagist/dt/hybridinteractive/craft-position-fieldtype.svg?style=flat-square)](https://packagist.org/packages/hybridinteractive/craft-position-fieldtype)
 
-# Position Fieldtype plugin for Craft CMS 3.x
+# Position Fieldtype plugin for Craft CMS 4.x
 
-Brings back the Position fieldtype from Craft 2
+Position fieldtype from Craft 4
 
 ![Screenshot](resources/img/plugin-screenshot.png)
 
@@ -17,7 +17,7 @@ This plugin is licensed under a MIT license, which means that it's completely fr
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0.
+This plugin requires Craft CMS 4.0.0-beta.3.
 
 ## Installation
 
