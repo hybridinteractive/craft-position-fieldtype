@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.0.0-beta.3] - 2022-05-03
+-A big thanks to [Jan](https://github.com/janhenckens) for the PR to help us port this plugin over to Craft 4.
+
 ## [1.0.16] - 2020-05-14
 - Began migrating plugin to Hybrid Interactive
 
