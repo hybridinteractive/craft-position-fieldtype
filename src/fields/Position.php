@@ -130,7 +130,7 @@ class Position extends Field
      *
      * @see \yii\db\QueryBuilder::getColumnType()
      */
-    public function getContentColumnType(): string
+    public static function dbType(): string
     {
         return Schema::TYPE_STRING;
     }
