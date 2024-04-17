@@ -14,6 +14,7 @@ namespace rias\positionfieldtype\fields;
 use Craft;
 use craft\base\ElementInterface;
 use craft\base\Field;
+use phpDocumentor\Reflection\Types\This;
 use rias\positionfieldtype\assetbundles\positionfieldtype\PositionFieldtypeAsset;
 use yii\db\Schema;
 
@@ -78,7 +79,7 @@ class Position extends Field
      *
      * @return array
      */
-    public function rules()
+    public function rules(): array
     {
         $rules = parent::rules();
         $rules = array_merge($rules, [
@@ -129,7 +130,7 @@ class Position extends Field
      *
      * @see \yii\db\QueryBuilder::getColumnType()
      */
-    public function getContentColumnType(): string
+    public static function dbType(): string
     {
         return Schema::TYPE_STRING;
     }
@@ -147,7 +148,7 @@ class Position extends Field
      *
      * @return mixed The prepared field value
      */
-    public function normalizeValue($value, ElementInterface $element = null)
+    public function normalizeValue($value, ElementInterface $element = null): ?string
     {
         return $value;
     }
@@ -160,7 +161,7 @@ class Position extends Field
      *
      * @return string|null
      */
-    public function getSettingsHtml()
+    public function getSettingsHtml(): string
     {
         // Register our asset bundle
         Craft::$app->getView()->registerAssetBundle(PositionFieldtypeAsset::class);
@@ -231,7 +232,7 @@ class Position extends Field
      *
      * @return array
      */
-    private static function getOptions()
+    private static function getOptions(): array
     {
         return [
             'left'       => Craft::t('position-fieldtype', 'Left'),
