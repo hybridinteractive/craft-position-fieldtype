@@ -2,7 +2,7 @@
     "name": "hybridinteractive/craft-position-fieldtype",
     "description": "Brings back the Position fieldtype from Craft 2",
     "type": "craft-plugin",
-    "version": "5.0.0",
+    "version": "5.0.0-beta.1",
     "keywords": [
         "craft",
         "cms",
