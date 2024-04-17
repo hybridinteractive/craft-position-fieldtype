@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.0.0] - 2024-04-17
+- Drop the beta version in the name
+
 ## [5.0.0-beta.1] - 2024-04-17
 - Initial stable Craft CMS 5 release
 - A big thanks to [Jan](https://github.com/janhenckens) for the PR to help us port this plugin over to Craft 5.
